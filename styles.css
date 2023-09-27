@@ -1,0 +1,69 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    color:aqua;
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Apply styles to the header */ 
+header {
+   background-color:Black; 
+   color: red;
+   text-align: center;
+   padding: 20px; 
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+/* Style the navigation menu */
+nav { 
+   background-color:Grey; 
+   text-align: center; 
+   padding: 10px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px; 
+} 
+
+nav li {
+   display: inline;
+   margin-right: 20px; 
+} 
+
+nav a { 
+   text-decoration: none;
+   color: red; 
+   font-weight: bold; 
+   border-bottom: 2px solid transparent; 
+   transition: border-bottom 0.3s ease-in-out; 
+}
+
+nav a:hover { 
+   border-bottom: 2px solid red;
+
+} 
+
+/* Style the main content */ 
+main { 
+   padding: 20px;
+}
+
+section { 
+    margin-bottom: 30px;
+    border: 1px solid red; 
+    border-radius: 5px; 
+    padding: 10px;
+     background-color: red; 
+} 
+
+/* Make the website responsive using media queries */
+@media (max-width: 768px) { 
+      header { 
+         font-size: 24px; 
+     } 
+      nav { 
+         font-size: 18px; 
+    } main { 
+         padding: 10px; 
+    } 
+}
